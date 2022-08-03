@@ -2,8 +2,8 @@ from flask import request
 from flask_restx import Resource, Namespace
 
 from auth import admin_required, auth_required
-from models import Director, DirectorSchema
-from setup_db import db
+from application.models import Director, DirectorSchema
+from application.setup_db import db
 
 director_ns = Namespace('directors')
 
