@@ -4,7 +4,7 @@ from flask import request
 from flask_restx import Resource, Namespace
 from application.setup_db import db
 from application.models import User, UserSchema
-from auth import auth_required, admin_required
+from .auth import auth_required, admin_required
 
 user_ns = Namespace('users')
 

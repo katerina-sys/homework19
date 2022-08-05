@@ -1,7 +1,7 @@
 from flask import request
 from flask_restx import Resource, Namespace
 
-from auth import admin_required, auth_required
+from .auth import admin_required, auth_required
 from application.models import Director, DirectorSchema
 from application.setup_db import db
 
